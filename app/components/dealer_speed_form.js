@@ -19,16 +19,16 @@ export class DealerSpeedForm extends React.Component {
         const handleSubmit= this.props.handleSubmit; //this.props.handleSubmit prop is provided by Redux Form 
         const val= speed.value || this.props.initialSpeed;
         return (
-            <div class="dealer-speed-form">
+            <div className="dealer-speed-form">
                 <form onSubmit={handleSubmit(onSubmit)}>
                     {[
                         ["Fast", 250],
                         ["Normal", 750],
                         ["Slow", 1500]
                     ].map((el) => (
-                        <label key={el[1]}>
+                        <label  className="checkbox" key={el[1]}>
                             {el[0]}
-                            <input type = "radio"
+                            <input  type = "radio"
                                     name="speed"
                                     {...speed}
                                     checked={val==el[1]}
@@ -36,7 +36,8 @@ export class DealerSpeedForm extends React.Component {
                         </label>
                     ))
                     }
-                    <input type="submit" />
+                    
+                    <input className="buttons" type="submit" />
                 </form>
             </div>
         );

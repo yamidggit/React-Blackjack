@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { setupGame } from '../action_creators'
+import { setupGame } from '../action_creators';
 
 export class GameOverMessage extends React.Component{
     render() {
@@ -18,7 +18,7 @@ export class GameOverMessage extends React.Component{
         return (
             <div id="game_over_message">
                 { message }
-                <button onClick={this.props.nextGame}> Next Game</button>
+                <button className="buttons" onClick={this.props.nextGame}> Next Game</button>
             </div>
         );
         

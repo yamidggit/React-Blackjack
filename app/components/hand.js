@@ -13,4 +13,4 @@ export default class Hand extends React.Component{
             </div>
         );
     }
-};
+}

@@ -16,7 +16,7 @@ export class App extends React.Component{
     render(){
         let messageComponent;
         if(this.props.gameOver){
-            messageComponent= <GameOverMessageContainer win={this.props.playerWon} />
+            messageComponent= <GameOverMessageContainer win={this.props.playerWon} />;
         }
         
         let gameComponents;
@@ -26,23 +26,23 @@ export class App extends React.Component{
         }
         else {
             gameComponents = (
-                <div class="game">
+                <div className="game">
                     <InfoContainer />
                     { messageComponent }
-                    <strong>Player hand:</strong>
+                    <h2>Player hand</h2>
                     <Hand cards={this.props.playerHand } />
-                    <strong>Dealer hand:</strong>
+                    <h2>Dealer hand</h2>
                     <Hand cards={this.props.dealerHand } />
                 </div>
             );
             
         }
         return (
-           <div className="app">
+           <div className="app ">
                 <div className="links">
                     <Link to="/settings">Settings</Link>
                 </div>
-                <h1>React Blackjack</h1>
+                <h1 className="title">React Blackjack</h1>
                 {gameComponents}
                 {this.props.patchingRecord ?
                     "Saving..."
@@ -50,7 +50,7 @@ export class App extends React.Component{
             </div>
             );
     }
-};
+}
 
 function mapStateToProps(state) {
     return {

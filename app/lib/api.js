@@ -1,5 +1,10 @@
 //package isomorphic-fetch is used to make asynchronous calls to external APIs
 import fetch from 'isomorphic-fetch';
+
+
+/*
+this is for development in cloud9 before the api was in heroku
+
 import url from 'url';
 
 function makeUrl(token) {
@@ -9,6 +14,10 @@ function makeUrl(token) {
         port: 8081,
         pathname
     });
+}*/
+
+function makeUrl(token) {
+    return `https://api-to-save-wins-losses.herokuapp.com/users/${token}`;
 }
 
 /* "Fetch" is a built-in JavaScript function.

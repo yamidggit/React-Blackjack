@@ -1,10 +1,21 @@
-#info {
-    margin-bottom: 10px;
-
-    span {
-        margin: 10px;
-    }
-    button {
-        margin: 0 5px;
-    }
+#info_bar {
+    margin: 0.5em 0.5em;
+    color: #ffcc00;
+    font-size: 20px;
+   
 }
+
+.buttons {
+        margin-left: 1em;
+        background-color: #ffcc00;
+        border: none;
+        color: #4d0000;
+        padding: 0.2em 0.7em 0.2em 0.7em;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius:0.3em ;
+        font-size: 16px;
+        font-weight: bold;
+        
+    }

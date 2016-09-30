@@ -1,3 +1,48 @@
+body{
+    padding: 3em;
+    background-color: #4d0000;
+    
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.title{
+   color: #ffcc00; 
+}
+.app{
+    margin: auto;
+    width: 50%;
+    height: 100%;
+   
+}
+
+.title, .game{
+    text-align: center;
+}
+
+.links{
+    position: fixed;
+    top: 0;
+    right: 25%;
+    
+    display: block; 
+    background-color: #ffcc00;
+    padding: 0.8em;
+     
+}
+.links a{
+    font-weight: bold;
+    color: #4d0000;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
 .card {
     display: inline-block;
     border: 1px solid black;

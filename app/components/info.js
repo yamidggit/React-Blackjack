@@ -13,12 +13,12 @@ export class Info extends React.Component{
             <span id ="player_record">
                 Wins: {this.props.winCount} Losses: {this.props.lossCount}
             </span>
-            <span id="buttons">
-                <button disabled={disableButtons} 
+            <span>
+                <button className="buttons" disabled={disableButtons} 
                         onClick={this.props.onClickHit}>
                     Hit
                 </button>
-                <button disabled={disableButtons} 
+                <button className="buttons" disabled={disableButtons} 
                         onClick={this.props.onClickStand}>
                     Stand
                 </button>

@@ -6,11 +6,11 @@ import {DealerSpeedFormContainer} from './dealer_speed_form';
 export class Settings extends React.Component {
     render() {
         return (
-            <div id="settings">
-                <div class="links">
+            <div>
+                <div className="links">
                     <Link to="/">Back to game</Link>
                 </div>
-                <h1>Settings</h1>
+                <h1 className="settings-title">Settings</h1>
                 <DealerSpeedFormContainer/>
             </div>
         );
