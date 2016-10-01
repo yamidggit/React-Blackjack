@@ -48,4 +48,6 @@ npm run webpack:prod
 how to push production branch in heroku
 git push -f local_branch_name:master
 
+git push -u origin production
+
 
