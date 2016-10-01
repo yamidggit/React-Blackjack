@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {AppContainer} from './components/app.js';
-import{Settings} from './components/settings.js';
+import {AppContainer} from './app/components/app.js';
+import{Settings} from './app/components/settings.js';
 import {createStore, applyMiddleware,
          compose } from 'redux';
 import { Provider } from 'react-redux';
 import createSagaMiddleware from 'redux-saga';
 import {Map} from 'immutable';
 
-import reducer from './reducers/index';
-import { setupGame, fetchRecord } from '../app/action_creators';
+import reducer from './app/reducers/index';
+import { setupGame, fetchRecord } from './app/action_creators';
 
-import watchActions from './sagas/index';
+import watchActions from './app/sagas/index';
 
 /*
 React Router works by deciding which components to render based on the URL
@@ -33,7 +33,7 @@ const userToken= queryString.parse(window.location.search).token ||
                 randomstring.generate(12);
 
 const initialState= {settings: new Map({speed: 750, userToken}) };
-require('./css/main.scss');
+require('./app/css/main.scss');
 
 
 
