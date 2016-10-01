@@ -7,9 +7,9 @@ Play at: http://react-blackjack.surge.sh
 
 *Instructions to see wins/losses records saved:
 
-Try loading the page with an easy to remember token (add ?token=1 to the end of the URL you visit to see your application).
+Try loading the page with an easy to remember token (add ?token=2 to the end of the URL you visit to see your application).
 
-https://react-blackjack-yamidgc9.c9users.io/?token=1
+    http://react-blackjack.surge.sh?token=2
 
 Play a few games. Then close the page, and open it again with the same token. You should see that your record is the same as when you left!
 (to save the last play you should push the next game button before closing the page)
