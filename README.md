@@ -1,13 +1,15 @@
 *This is a sample blackjack application.
 
+Surge: react-blackjack.surge.sh
+
 *We needs to conect to an ruby on rails API to see the aplication working
  the api is on heroku: https://api-to-save-wins-losses.herokuapp.com
 
 *Instructions to see wins/losses records saved:
 
-Try loading the page with an easy to remember token (add ?token=1 to the end of the URL you visit to see your application).
+Try loading the page with an easy to remember token (add ?token=2 to the end of the URL you visit to see your application).
 
-https://react-blackjack-yamidgc9.c9users.io/?token=1
+  react-blackjack.surge.sh/?token=2
 
 Play a few games. Then close the page, and open it again with the same token. You should see that your record is the same as when you left!
 (to save the last play you should push the next game button before closing the page)
@@ -43,7 +45,7 @@ You don't need to run webpack:watch if you are running the dev server.
 
 npm run webpack-dev-server
 
-*production
+*production 
 npm run webpack:prod
 
 
