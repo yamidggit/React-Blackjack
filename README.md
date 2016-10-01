@@ -27,7 +27,7 @@ How to Run Things
 npm install
 Run webpack:
 
-npm run webpack
+
 Automatically run webpack when files change:
 
 npm run webpack:watch
@@ -42,5 +42,8 @@ Run webpack-dev-server (master branch is configuration for Cloud9. local branch 
 You don't need to run webpack:watch if you are running the dev server.
 
 npm run webpack-dev-server
+
+*production
+npm run webpack:prod
 
 

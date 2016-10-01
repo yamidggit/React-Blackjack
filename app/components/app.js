@@ -44,9 +44,9 @@ export class App extends React.Component{
                 </div>
                 <h1 className="title">React Blackjack</h1>
                 {gameComponents}
-                {this.props.patchingRecord ?
+                <p className="title">{this.props.patchingRecord ?
                     "Saving..."
-                    : "" }
+                    : "" }</p>
             </div>
             );
     }
