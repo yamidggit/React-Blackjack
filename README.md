@@ -1,5 +1,7 @@
 *This is a sample blackjack application.
 
+Play at: http://react-blackjack.surge.sh 
+
 *We needs to conect to an ruby on rails API to see the aplication working
  the api is on heroku: https://api-to-save-wins-losses.herokuapp.com
 
@@ -45,9 +47,8 @@ npm run webpack-dev-server
 
 *production
 npm run webpack:prod
-how to push production branch in heroku
-git push -f local_branch_name:master
 
+for github
 git push -u origin production
 
 
